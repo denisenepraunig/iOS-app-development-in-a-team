@@ -24,6 +24,9 @@ Based on your teams working style it may be a good idea to protect the main bran
 ## .gitignore file
 When working with Xcode projects GitHub has a nice template for it. Xcode generates a lot of files you don't need in your source code repository (like DerivedData or dSYM files). You normally don't commit the source code of Pod files or from SPM.
 
+## .githooks
+TODO
+
 ## Repository README
 TODO: Project setup, contribution guide
 
@@ -107,3 +110,22 @@ When working with an Xcode project with multiple people you will experience merg
 
 ## Merge conflicts / changes Storyboard files
 Storyboards are a NIGHTMARE to solve merge conflicts, I would advice to sync in your team WHO touches WHICH Storyboard. Also modularizing storyboard can help tremendously.
+
+# Additional topics
+* SwiftGen (Assets, translations)
+* How to handle developer certificates (fastlane)
+* Handeling TODOs
+* Dependency Injection
+* Differnt bundles for dev and prod
+* Translation process - Phrase.com
+* Accounts for Firebase
+* Remote Config (Firebase) / Feature flags
+* Dealing with Xcode warnings
+* Bumping the build number
+* Debug menu inside the app - different environments (dev, qa, prod)
+* Network Debugger
+* Sharing Passwords (1Password)
+* Onboarding Guide: get a Google Account, join Apple Developer team, ...
+* Analytics / Tracking
+* Architecture Diagrams and Desicions
+* Who takes care of the developer account?
