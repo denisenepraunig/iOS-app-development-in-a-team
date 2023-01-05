@@ -25,7 +25,14 @@ Based on your teams working style it may be a good idea to protect the main bran
 When working with Xcode projects GitHub has a nice template for it. Xcode generates a lot of files you don't need in your source code repository (like DerivedData or dSYM files). You normally don't commit the source code of Pod files or from SPM, unless you go with a so called "vendoring" approach.
 
 ## .githooks
-TODO
+You could use `.githooks` for pre-commit hooks and run things like `swiftlint --autocorrect`. Make sure to automatically add the changed files again to the commit with a script like this:
+```bash
+git diff --staged --name-only --diff-filter=AM | grep .swift$ | while read file
+do
+   git add "$file"
+done
+```
+Just be aware that some pre-commit hooks can take some time to execute and it could be annoying if you quickly want to commit something.
 
 ## Repository README
 TODO: Project setup, contribution guide
